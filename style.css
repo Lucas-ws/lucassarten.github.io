@@ -73,3 +73,8 @@ footer {
   font-family: Open Sans;
   margin: 0;
 }
+
+img {
+  width: 50px;
+  vertical-align: center;
+}
