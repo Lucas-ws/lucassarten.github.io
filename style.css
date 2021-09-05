@@ -54,6 +54,12 @@ body {
   color: grey;
 }
 
+.showcase-item > p2 {
+  font-family: Mono Sans;
+  font-size: 20px;
+  color: rgb(189, 187, 187);
+}
+
 .button {
   background-color: #9537f6;
   color: white;
