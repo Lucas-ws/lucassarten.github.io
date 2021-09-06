@@ -1,5 +1,7 @@
 html {
   background-color: #9675b8;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -32,32 +34,50 @@ body {
   grid-auto-rows: 2fr;
   grid-template-columns: repeat(2, 1fr);
   margin: 20;
-  padding: 5% 5% 1% 5%;
+  padding: 1% 5% 1% 5%;
+}
+
+.showcase-item-main{
+  background-color: white;
+  text-align: center;
+  font-family: Roboto;
+  border-radius: 20px;
+  margin: 5%;
+  padding: 1% 5% 2% 5%;
+}
+
+.showcase-item-main > p2 {
+  font-family: Mono Sans;
+  font-size: 20px;
+  color: #a5a5a5;
+}
+
+.showcase-item-main > h1{
+  font-size: 40px;
+}
+
+.personal-title{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  font-family: Spartan;
 }
 
 .showcase-item{
   background-color: white;
   text-align: center;
-  font-family: Allerta;
-  border-radius: 20px;
-  padding: 5%;
-  margin: 2%;
-}
-
-.showcase-item > h1{
   font-family: Roboto;
+  border-radius: 20px;
+  margin: 2%;
+  padding: 5%;
 }
 
 .showcase-item > p {
-  font-family: Mono Sans;
-  font-size: 20px;
   color: grey;
 }
 
 .showcase-item > p2 {
-  font-family: Mono Sans;
-  font-size: 20px;
-  color: rgb(189, 187, 187);
+  color: #a5a5a5;
 }
 
 .button {
@@ -74,7 +94,7 @@ body {
 
 footer {
   background-color: #242424;
-  color: white;
+  color: white;  
   text-align: center;
   font-family: Open Sans;
   margin: 0;
