@@ -49,14 +49,19 @@ body {
   text-align: center;
   font-family: Roboto;
   border-radius: 20px;
+  font-size: 20px;
   margin: 5%;
   padding: 1% 5% 2% 5%;
 }
 
 .showcase-item-main > p2 {
   font-family: Mono Sans;
-  font-size: 20px;
   color: #a5a5a5;
+}
+
+.showcase-item-main > p {
+  font-family: Mono Sans;
+  color: grey;
 }
 
 .showcase-item-main > h1{
@@ -75,15 +80,18 @@ body {
   text-align: center;
   font-family: Roboto;
   border-radius: 20px;
+  font-size: 20px;
   margin: 2%;
   padding: 5%;
 }
 
 .showcase-item > p {
+  font-family: Mono Sans;
   color: grey;
 }
 
 .showcase-item > p2 {
+  font-family: Mono Sans;
   color: #a5a5a5;
 }
 
