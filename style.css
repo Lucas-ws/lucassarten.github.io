@@ -9,20 +9,21 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-
+.page-title{
+  text-align: center;
+}
 .page-title > h1 {
   line-height: 1.8;
   font-size: 50px;
   color: white;
-  text-align: center;
+  display: inline-block;
   font-family: Spartan;
-  margin: 125px 0 0 ;
+  margin: 125px 0 0;
 }
 
 .page-title > p {
   line-height: 1.8;
   color: white;
-  text-align: center;
   font-family: Allerta;
   margin: 20px 2% 60px 2%;
 }
