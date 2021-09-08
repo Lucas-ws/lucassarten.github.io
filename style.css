@@ -16,7 +16,7 @@ body {
   color: white;
   text-align: center;
   font-family: Spartan;
-  margin: 125px 2% 0 2%;
+  margin: 125px 0 0 ;
 }
 
 .page-title > p {
@@ -24,7 +24,7 @@ body {
   color: white;
   text-align: center;
   font-family: Allerta;
-  margin: 20px 2% 60px;
+  margin: 20px 2% 60px 2%;
 }
 
 .showcase-grid {
