@@ -1,0 +1,87 @@
+:root {
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  background-color: #9675b8;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-title {
+  line-height: 1.8;
+  color: white;
+  font-family: Allerta;
+  margin: 20px 2% 60px 2%;
+  text-align: center;
+}
+
+.board {
+  background: rgb(51, 51, 51);
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.tile {
+  background: rgb(51, 51, 51);
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.tile[colour="none"] {
+  border: 2px solid rgb(220, 220, 220);
+}
+
+.tile[colour="grey"] {
+  background-color: rgb(80, 80, 80);
+}
+
+.tile[colour="yellow"] {
+  background-color: rgb(224, 221, 44);
+}
+
+.tile[colour="green"] {
+  background-color: rgb(121, 228, 49);
+}
+
+footer {
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  font-family: Open Sans;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+img {
+  width: 50px;
+  margin: 1% 0 1% 0;
+  vertical-align: center;
+}
