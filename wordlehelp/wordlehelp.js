@@ -2329,7 +2329,6 @@ window.addEventListener('load', (event) => {
 document.addEventListener("keydown", function (event) {
   if (event.key == "Backspace") {
     // erase last letter
-    console.log("row: " + row + " col: " + col);
     if (col <= 0 && row > 0) {
       // retreat col/row
       col = 5;
@@ -2345,7 +2344,6 @@ document.addEventListener("keydown", function (event) {
   }
   if (!/^[a-z]$/i.test(event.key)) return; // only accept letters as input
   if (row == 5 && col == 5) return; // board is full cant input
-  console.log("row: " + row + " col: " + col);
   document.getElementById("board").children[row].children[col].textContent =
     event.key;
   if (col <= 4) col++; // advance col/row
