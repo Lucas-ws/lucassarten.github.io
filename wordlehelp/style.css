@@ -18,7 +18,7 @@ body {
   line-height: 1.8;
   color: white;
   font-family: Allerta;
-  margin: 20px 2% 60px 2%;
+  margin: 20px 2% 20px 2%;
   text-align: center;
 }
 
@@ -68,6 +68,23 @@ body {
 
 .tile[colour="green"] {
   background-color: rgb(83, 141, 78);
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+ul li {
+  font-family: Allerta;
+  background:#fff;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
 }
 
 footer {
