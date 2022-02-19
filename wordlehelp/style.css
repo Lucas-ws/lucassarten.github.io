@@ -73,14 +73,17 @@ body {
 ul {
   list-style-type: none;
   text-align: center;
-  padding-left: 600px;
-  padding-right: 600px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 10px;
 }
 
 ul li {
   font-family: Allerta;
   background:#fff;
   display: inline-block;
+  width: 10%;
   padding: 10px;
   margin: 5px;
   border: 1px solid #ddd;
