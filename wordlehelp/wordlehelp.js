@@ -2320,6 +2320,11 @@ const words = [
 col = 0;
 row = 0;
 
+// display the results list on page load
+window.addEventListener('load', (event) => {
+    findGuesses();
+  });
+
 // listener for board text input, handles typing input on the board
 document.addEventListener("keydown", function (event) {
   if (event.key == "Backspace") {
