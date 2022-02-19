@@ -2321,9 +2321,9 @@ col = 0;
 row = 0;
 
 // display the results list on page load
-window.addEventListener('load', (event) => {
-    findGuesses();
-  });
+window.addEventListener("load", (event) => {
+  findGuesses();
+});
 
 // listener for board text input, handles typing input on the board
 document.addEventListener("keydown", function (event) {
@@ -2346,6 +2346,9 @@ document.addEventListener("keydown", function (event) {
   if (row == 5 && col == 5) return; // board is full cant input
   document.getElementById("board").children[row].children[col].textContent =
     event.key;
+  document
+    .getElementById("board")
+    .children[row].children[col].setAttribute("colour", "grey");
   if (col <= 4) col++; // advance col/row
   if (col >= 5 && row < 5) {
     col = 0;
@@ -2360,7 +2363,7 @@ document.addEventListener(
   function (e) {
     e = e || window.event;
     if (e.target.textContent == " ") return; // empty tile, nothing to update
-    if (e.target.getAttribute("colour") == "none") {
+    if (e.target.getAttribute("colour") == "grey") {
       // grey tile, turns yellow
       e.target.setAttribute("colour", "yellow");
     } else if (e.target.getAttribute("colour") == "yellow") {
@@ -2368,7 +2371,7 @@ document.addEventListener(
       e.target.setAttribute("colour", "green");
     } else if (e.target.getAttribute("colour") == "green") {
       // green tile, turns grey
-      e.target.setAttribute("colour", "none");
+      e.target.setAttribute("colour", "grey");
     }
     findGuesses();
   },
@@ -2392,7 +2395,7 @@ function findGuesses() {
         green[tiles[i].getAttribute("col")] = tiles[i].textContent;
       } else if (tiles[i].getAttribute("colour") == "yellow") {
         yellow.push(tiles[i].textContent);
-      } else if (tiles[i].getAttribute("colour") == "none") {
+      } else if (tiles[i].getAttribute("colour") == "grey") {
         grey.push(tiles[i].textContent);
       }
     }

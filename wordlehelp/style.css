@@ -23,7 +23,7 @@ body {
 }
 
 .board {
-  background: rgb(51, 51, 51);
+  background: #9675b8;
   display: grid;
   margin: 0 auto;
   grid-template-rows: repeat(6, 1fr);
@@ -39,7 +39,7 @@ body {
 }
 
 .tile {
-  background: rgb(51, 51, 51);
+  background: #9675b8;
   color: white;
   width: 100%;
   display: inline-flex;
@@ -55,19 +55,19 @@ body {
 }
 
 .tile[colour="none"] {
-  border: 2px solid rgb(86, 87, 88);
+  border: 1px solid #ffe7ff;
 }
 
 .tile[colour="grey"] {
-  background-color: rgb(80, 80, 80);
+  background-color: #787c7e;
 }
 
 .tile[colour="yellow"] {
-  background-color: rgb(181, 159, 59);
+  background-color: #b59f3b;
 }
 
 .tile[colour="green"] {
-  background-color: rgb(83, 141, 78);
+  background-color: #538d4e;
 }
 
 ul {
@@ -81,7 +81,7 @@ ul {
 
 ul li {
   font-family: Allerta;
-  background:#fff;
+  background:white;
   display: inline-block;
   width: 10%;
   padding: 10px;
