@@ -73,8 +73,8 @@ body {
 ul {
   list-style-type: none;
   text-align: center;
-  padding-left: 40%;
-  padding-right: 40%;
+  padding-left: 600px;
+  padding-right: 600px;
 }
 
 ul li {
