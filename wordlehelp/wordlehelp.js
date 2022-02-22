@@ -2382,8 +2382,8 @@ document.addEventListener(
 function findGuesses() {
   // guess letters
   guesses = []; // words
-  green = []; // letter and position matters
-  yellow = []; // only letter matters
+  green = []; // letter and position correct
+  yellow = [[],[],[],[],[]]; // letter correct position wrong
   grey = []; // letter not in answer
 
   // examine the board
@@ -2394,7 +2394,7 @@ function findGuesses() {
       if (tiles[i].getAttribute("colour") == "green") {
         green[tiles[i].getAttribute("col")] = tiles[i].textContent;
       } else if (tiles[i].getAttribute("colour") == "yellow") {
-        yellow.push(tiles[i].textContent);
+        yellow[tiles[i].getAttribute("col")].push(tiles[i].textContent);
       } else if (tiles[i].getAttribute("colour") == "grey") {
         grey.push(tiles[i].textContent);
       }
@@ -2429,11 +2429,13 @@ function checkGreen(greenLetters, word) {
   return true;
 }
 
-// check the current guess contains all yellow letters
+// check the current guess contains all yellow letters, not in the positions they were guessed.
 function checkYellow(yellowLetters, word) {
   for (let i = 0; i < yellowLetters.length; i++) {
-    if (!word.includes(yellowLetters[i])) {
-      return false;
+    for (let j = 0; j < yellowLetters[i].length; j++) {
+      if (!word.includes(yellowLetters[i][j]) || yellowLetters[i][j] == word[i]) {
+        return false;
+      }
     }
   }
   return true;
