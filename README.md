@@ -1,4 +1,4 @@
-# [lucassarten.software](https://lucassarten.software/)
+# [https://lucassarten.github.io/](https://lucassarten.github.io/)
 My personal showcase website of things I've made!
 
-[click here](https://lucassarten.software/) to check it out.
+[click here](https://lucassarten.github.io/) to check it out.
