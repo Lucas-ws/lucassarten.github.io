@@ -91,6 +91,7 @@ ul li {
 }
 
 footer {
+  position: absolute;
   background-color: #242424;
   color: white;
   text-align: center;
